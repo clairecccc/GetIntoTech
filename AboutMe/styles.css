@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-Feb-2018, 16:03:00
+    Author     : getintotech
+*/
+
+li {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    color: #875C74;
+}
+
+table, tr, td, th, p {
+    border-collapse: collapse;
+    border: 1px dashed #329F5B;
+    color: #E5AEC2;
+}
+
+table {
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul, li {
+    display: inline;
+    padding: 10px;
+}
+
+img {
+    margin: auto;
+    border: dotted 3px red;
+    display: block;
+}
+
+h1 {
+    border: 1px solid red;
+    text-align: right;
+    /*padding-right: 10px;
+    padding-bottom: 50px;
+    padding-top: 20px;*/
+    /*padding: 20px 10px 50px 0;*/
+    padding: 20px 50px;
+}
