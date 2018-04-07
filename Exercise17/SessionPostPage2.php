@@ -3,7 +3,7 @@ session_start();
 
 if(!empty($_SESSION)){
 
-    print_r($_SESSION);
+//    print_r($_SESSION);
     
     
     echo "Hello " . $_SESSION['username'] . '<br>';
