@@ -9,16 +9,18 @@ session_start();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+       
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>         
+        <link rel="stylesheet" type="text/css" href="Exercise17.css"> 
     </head>
     
     <body>
-        <div class="header text-center font-weight-bold">
-            <h1> This is the login page</h1>
-            <h2> Complete the fields below to log in</h2>  
+        <div class="header text-center font-weight-bold text-white">
+            <h1> This is the log in page</h1>
+            <h2> Complete the fields below</h2>  
         </div>
    
         <div class="container">
@@ -36,19 +38,23 @@ session_start();
                 </div>
             </div>
         </div>
+        <div class="text-white">
+            <?php    
+                if(!empty($_POST)){
+                $_SESSION["username"] = $_POST['username'];  
+                $_SESSION["color"] = $_POST['color']; 
+                $_SESSION["animal"] = $_POST['animal']; 
+                }
+                if(!empty($_SESSION)){
+                 echo "Welcome " . $_SESSION['username'] . '<br>';
+                 echo "You favourite colour is " . $_SESSION['color'] . '<br>';
+                 echo "You favourite animal is " . $_SESSION['animal'] . '<br>';
+                 echo "<a href='SessionPostPage2.php'>Go to Page 2</a><br>";
+                }
+            ?>
+        </div>   
     </body>
 </html>
         
-<?php    
-if(!empty($_POST)){
-$_SESSION["username"] = $_POST['username'];  
-$_SESSION["color"] = $_POST['color']; 
-$_SESSION["animal"] = $_POST['animal']; 
-}
-if(!empty($_SESSION)){
- echo "Welcome " . $_SESSION['username'] . '<br>';
- echo "You favourite colour is " . $_SESSION['color'] . '<br>';
- echo "You favourite animal is " . $_SESSION['animal'] . '<br>';
- echo "<a href='SessionPostPage2.php'>Go to Page 2</a><br>";
-}
+
 

@@ -1,0 +1,13 @@
+html{
+            background: url("Images/hello wallpaper.jpg") no-repeat center center;
+            min-height: 100%;
+            align-content: background-size, cover;
+    }
+         
+body{
+           min-height:100%;
+           background-color: inherit;
+    }
+
+
+         
