@@ -26,7 +26,7 @@ session_start();
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
-                    <div class="jumbotron centre">
+                    <div class="jumbotron center">
                         <form action="" method="post" >
                             Username: <input type="text" name="username"/> <br>
                             Password: <input type="password" name="password" /> <br>

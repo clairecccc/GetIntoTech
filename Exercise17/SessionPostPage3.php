@@ -21,7 +21,7 @@ session_start();
         <div class="text-white h1">
             <?php
 
-            $_SESSION =[];
+//            $_SESSION =[];
 
             session_destroy();
 

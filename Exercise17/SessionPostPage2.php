@@ -23,7 +23,7 @@ session_start();
             <?php if(!empty($_SESSION)) { ?>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6 jumbotron centre">
+                    <div class="col-md-8 col-lg-6 jumbotron center">
                             <h3>Hello <?php echo $_SESSION['username']; ?></h3>
                             <h3>Your favourite colour is <?php echo $_SESSION['color']; ?></h3>
                             <h3>Your favourite animal is <?php echo $_SESSION['animal']; ?></h3>
